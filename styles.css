@@ -418,7 +418,7 @@ nav h2 {
   justify-content: center
 }
 
-.radio-input[type="radio"] {
+#contact input[type="radio"] {
   display: flex;
   justify-content: center;
   transform: scale(1.1);
@@ -595,15 +595,6 @@ header p {
   width: 800px;
   justify-content: center;
   gap: 0;
-}
-
-#contact input[type="radio"] {
-  display: flex;
-  align-items: center;
-  transform: scale(1.5);
-  accent-color: var(--purple);
-  gap: 0.5rem;
-  cursor: pointer;
 }
 
 footer {
