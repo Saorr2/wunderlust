@@ -396,14 +396,14 @@ nav h2 {
   text-align: center;
 }
 
-#contact .radio-input {
+#contact .radio-label {
   max-width: 350px;
   display: flex;
   flex-direction: row-reverse;
 }
 
-#contact input[type="radio"] {
-  transform: scale(1.2);
+#contact .radio-input[type="radio"] {
+  transform: scale(1.5);
   accent-color: var(--purple);
   margin-left: 1.5rem;
   cursor: pointer;
