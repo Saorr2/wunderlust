@@ -415,10 +415,10 @@ nav h2 {
 
 #contact .radio-label {
   display: flex;
-  justify-content: left;
+  justify-content: center
 }
 
-#contact input[type="radio"] {
+.radio-input[type="radio"] {
   display: flex;
   justify-content: center;
   transform: scale(1.1);
