@@ -78,67 +78,6 @@ main {
   background: var(--white);
 }
 
-#menu-toggle {
-  width: 50%;
-  position: absolute;
-  top: 1rem;
-  right: 0;
-  background-color: var(--yellow);
-  color: var(--black);
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.85rem;
-  border-radius: 2px;
-  text-align: center;
-  z-index: 999;
-}
-
-#menu-toggle label {
-  max-width: 350px;
-  display: block;
-  text-align: center;
-  background: var(--yellow);
-  color: var(--black);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 0.90rem;
-  padding: 0.5rem 0.8rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#menu-toggle ul {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  background-color: var(--teal);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-}
-
-#menu-toggle ul li {
-  border-bottom: 1px solid var(--black);
-}
-
-#menu-toggle ul li a {
-  display: block;
-  text-align: center;
-  padding: 1rem;
-  font-weight: bold;
-  color: var(--dark-gray);
-  background-color: var(--teal);
-  text-decoration: none;
-}
-
-#toggle,
-#toggle + label + ul {
-  display: none;
-}
-
-#toggle:checked + label + ul {
-  display: flex;
-}
-
 header {
   max-width: 350px;
   display: flex;
@@ -195,6 +134,84 @@ nav a {
 
 nav h2 {
   display: none;
+}
+
+#skip {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: top 0.3s ease;
+}
+
+#skip:focus {
+  top: 0;
+  outline: 2px solid var(--purple);
+}
+
+#menu-toggle {
+  width: 50%;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background-color: var(--yellow);
+  color: var(--black);
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  border-radius: 2px;
+  text-align: center;
+}
+
+#menu-toggle label {
+  max-width: 350px;
+  display: block;
+  text-align: center;
+  background: var(--yellow);
+  color: var(--black);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.90rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#menu-toggle ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: var(--teal);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+}
+
+#menu-toggle ul li {
+  border-bottom: 1px solid var(--black);
+}
+
+#menu-toggle ul li a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  color: var(--dark-gray);
+  background-color: var(--teal);
+  text-decoration: none;
+}
+
+#toggle,
+#toggle + label + ul {
+  display: none;
+}
+
+#toggle:checked + label + ul {
+  display: flex;
 }
 
 #intro p {
@@ -397,13 +414,14 @@ nav h2 {
 }
 
 #contact .radio-label {
-  max-width: 350px;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: left;
 }
 
-#contact .radio-input[type="radio"] {
-  transform: scale(1.5);
+#contact input[type="radio"] {
+  display: flex;
+  justify-content: center;
+  transform: scale(1.1);
   accent-color: var(--purple);
   margin-left: 1.5rem;
   cursor: pointer;
@@ -465,6 +483,10 @@ header p {
   color: var(--dark-gray);
   width: 26ch;
   line-height: 1.4;
+}
+
+#menu-toggle ul li {
+  border-bottom: none;
 }
 
 #menu-toggle label {
@@ -608,7 +630,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 2rem 1.5rem;
+  padding: 3.5rem 2rem;
   gap: 1rem;
   padding-left: 0;
   background: linear-gradient(to bottom, var(--teal), var(--white));
@@ -644,8 +666,6 @@ header p {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
   background: var(--white);
 }
 
@@ -663,14 +683,13 @@ header p {
 
 #menu-toggle ul li a {
   display: block;
+  justify-content: space-between;
   width: 100%;
   padding: 1rem;
   background-color: var(--white);
   color: var(--black);
   font-weight: 600;
   text-align: center;
-  text-decoration: none;
-  border: none;
 }
 
 #menu-toggle ul li a:hover,
@@ -777,15 +796,6 @@ header p {
 #contact input,
 #contact select {
   max-width: 100%;
-}
-
-#contact input[type="radio"] {
-  display: flex;
-  align-items: center;
-  transform: scale(1.5);
-  accent-color: var(--purple);
-  gap: 0.5rem;
-  cursor: pointer;
 }
 
 footer {
