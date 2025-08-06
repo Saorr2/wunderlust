@@ -90,6 +90,13 @@ header {
   justify-content: left;
 }
 
+#logo img {
+  display: flex;
+  width: 120px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 header h1 {
   font-family: 'Molle', cursive;
   font-size: 2.5rem;
@@ -145,13 +152,6 @@ nav h2 {
 #skip:focus {
   top: 0;
   outline: 2px solid var(--purple);
-}
-
-#logo img {
-  display: flex;
-  width: 120px;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 #menu-toggle {
@@ -415,7 +415,7 @@ nav h2 {
 
 #contact .radio-label {
   display: flex;
-  justify-content: center
+  justify-content: left;
 }
 
 #contact input[type="radio"] {
@@ -468,6 +468,7 @@ header {
   padding: 3rem 2rem;
   gap: 0.5rem;
   padding-left: 0;
+  background: linear-gradient(to bottom, var(--teal), var(--white));
 }
 
 header h1 {
@@ -596,6 +597,15 @@ header p {
   gap: 0;
 }
 
+#contact input[type="radio"] {
+  display: flex;
+  align-items: center;
+  transform: scale(1.5);
+  accent-color: var(--purple);
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
 footer {
   max-width: 800px;
   display: flex;
@@ -623,6 +633,7 @@ header {
   padding: 3.5rem 2rem;
   gap: 1rem;
   padding-left: 0;
+  background: linear-gradient(to bottom, var(--teal), var(--white));
 }
 
 header h1 {
@@ -650,11 +661,17 @@ header p {
   display: none;
 }
 
+#menu-toggle ul li {
+  border-bottom: none;
+}
+
 #menu-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
   background: var(--white);
 }
 
