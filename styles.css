@@ -779,6 +779,15 @@ header p {
   max-width: 100%;
 }
 
+#contact input[type="radio"] {
+  display: flex;
+  align-items: center;
+  transform: scale(1.5);
+  accent-color: var(--purple);
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
 footer {
   display: flex;
   justify-content: center;
